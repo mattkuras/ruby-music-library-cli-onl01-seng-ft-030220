@@ -7,7 +7,7 @@ class MusicImporter
   end
   
   def files
-    binding.pry 
+    Dir.glob("#{path}/*").map{ |file| file.gsub("#{path}/", ' ' }
   end
   
 end
