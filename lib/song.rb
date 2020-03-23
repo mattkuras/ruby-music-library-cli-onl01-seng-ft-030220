@@ -59,7 +59,7 @@ class Song
   
   def self.new_from_filename(file)
     song = file.gsub('.mp3', '').split(" - ")
-    Song.new(song[0], song[1], song[2])
+    Song.new(song[1], song[0], song[2])
     
     binding.pry 
   end
