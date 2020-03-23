@@ -10,4 +10,9 @@ class MusicImporter
     Dir.glob("#{path}/*").map{ |file| file.gsub("#{path}/", '') }
   end
   
+  def import(file)
+    binding.pry
+    
+  end
+  
 end
